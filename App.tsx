@@ -8,13 +8,16 @@ import {Button, Text,View} from 'react-native';
 
 
 function App(): JSX.Element {
-  
-
+ const fruit = () =>{
+   console.warn("Function Called");
+   
+ }
+   
   return (
     // it is like a div tag
     <View >
       <Text style={{ fontSize: 40 }}>Hello My Name is Veerbahadur Sen</Text>
-      <Button title="Press here "></Button>
+      <Button title=" onPress " onPress={()=>fruit()} color={"green"}></Button>
     </View>
   );
 }
